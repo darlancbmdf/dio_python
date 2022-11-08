@@ -1,11 +1,11 @@
 # para que haja interação com usuário usasse o comand input(), conforme exemplo abaixo
-a = int(input('entre com o valor de a: '))
-b = int(input('entre com o valor de b: '))
+a = eval(input('entre com o valor de a: '))
+b = eval(input('entre com o valor de b: '))
 soma = a + b
-subtracao = a - b
-multiplicacao = a * b
-divisao = a / b
-resto = a % b
+sub = a - b
+mult = a * b
+div = a / b
+rest = a % b
 # o comando "type" mostra qual tipo de dado a variável está guardando
 print(type(soma))
 # quanto você define o tipo de dado como no exemplo abaixo "print('soma: ' + str(soma))", 
@@ -17,5 +17,5 @@ x = '1'
 soma2 = int(x) + 1
 print(soma2)
 # o comando "format(var)" é utilizado para concatenar na string sem necessidadede conversão da variável
-resultado = 'Soma: {sum} \nSubtracao: {sub} \nMultiplicação: {mult} \nDivisão: {divis} \nResto: {resto}'. format(sum=soma, sub=subtracao, mult=multiplicacao, divis=divisao, resto=resto)
+resultado = f'Soma: {soma} \tSubtracao: {sub} \tMultiplicação: {mult} \tDivisão: {div} \tResto: {rest}'
 print(resultado)
